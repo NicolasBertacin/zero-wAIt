@@ -1847,3 +1847,107 @@ body.has-cursor-dot * {
 .about-card:not(.is-visible) {
     filter: blur(8px);
 }
+
+/* =========================
+   STORY (scroll highlight)
+   ========================= */
+.story {
+    position: relative;
+    z-index: 2;
+    /* acima do fundo */
+    background: transparent;
+    overflow: clip;
+}
+
+/* vinheta suave parecida com as imagens */
+.story::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(1200px 650px at 18% 20%, rgba(255, 255, 255, .06), transparent 60%),
+        radial-gradient(900px 600px at 85% 25%, rgba(255, 255, 255, .035), transparent 62%),
+        radial-gradient(1200px 900px at 50% 85%, rgba(0, 0, 0, 0), rgba(0, 0, 0, .55) 70%);
+    opacity: .95;
+}
+
+/* altura de scroll (3 passos) */
+.story__spacer {
+    position: relative;
+    min-height: 320vh;
+    /* 300~360vh fica bom */
+}
+
+/* bloco fixo (sticky) */
+.story__sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: clamp(20px, 5vw, 64px);
+
+    z-index: 2;
+}
+
+.story__kicker {
+    margin: 0 0 28px;
+    font-size: clamp(22px, 3vw, 46px);
+    line-height: 1.15;
+    font-weight: 600;
+    color: rgba(236, 239, 241, .33);
+    letter-spacing: -0.02em;
+}
+
+.story__text {
+    display: grid;
+    gap: 16px;
+    max-width: 980px;
+}
+
+.story__line {
+    margin: 0;
+    font-size: clamp(24px, 3.4vw, 52px);
+    line-height: 1.18;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+
+    color: rgba(236, 239, 241, .18);
+    transition: color .35s ease, opacity .35s ease;
+}
+
+.story__line .strong {
+    font-weight: 900;
+}
+
+.story__line.is-active {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* gatilhos */
+.story__triggers {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.story__trigger {
+    height: 100vh;
+}
+
+@media (max-width: 640px) {
+    .story__kicker {
+        margin-bottom: 18px;
+    }
+
+    .story__text {
+        gap: 12px;
+    }
+}
