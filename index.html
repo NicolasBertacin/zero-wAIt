@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070708" />
+    <title>zero wIAt</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- FUNDO (fora de qualquer container) -->
+    <div class="bg" aria-hidden="true">
+        <canvas id="bg-canvas"></canvas>
+    </div>
+
+    <header class="header">
+        <nav class="nav" aria-label="Navegação principal">
+            <!-- Brand -->
+            <a class="brand-link" href="#">
+                <img class="brand-logo" src="assets/imagem_transparente.png" alt="" aria-hidden="true" />
+                <span>zero wIAt</span>
+            </a>
+
+            <ul class="menu" id="menu" role="list">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Processo</a></li>
+                <li><a href="#">Soluções</a></li>
+                <li><a href="#">Pilares</a></li>
+                <li><a href="#">Diretoria</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <a class="cta cta--primary" href="#">
+                Quero uma consultoria
+            </a>
+
+            <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero" aria-label="Hero">
+            <div class="badge badge--stack">
+                <img src="assets/imagem_transparente.png" alt="Logo zero wIAt" class="badge-logo" />
+                <span class="badge-text">zero wIAt</span>
+            </div>
+
+            <h1 class="title">
+                <span class="title-light">Sua empresa na</span>
+                <span class="title-bold">Velocidade da IA</span>
+            </h1>
+
+            <p class="subtitle">
+                Responda 100% dos clientes em menos de 1 minuto, 24h por dia,,<br />
+                com agentes de IA treinados no seu processo.
+            </p>
+
+            <div class="actions">
+                <a class="btn btn-primary" href="#">Sobre</a>
+                <a class="btn btn-link" href="#">
+                    Quero uma consultoria <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <section class="results" id="resultados">
+        <div class="results-inner">
+            <header class="results-head">
+                <p class="results-kicker">RESULTADOS</p>
+                <h2 class="results-title">Resultados reais em IA e automação</h2>
+            </header>
+
+            <div class="stats">
+                <article class="stat" style="--i:0">
+                    <div class="stat-value">R$ 500.000</div>
+                    <div class="stat-label">recuperados<br />em vendas</div>
+                </article>
+
+                <article class="stat" style="--i:1">
+                    <div class="stat-value">+3.000</div>
+                    <div class="stat-label">arquivos<br />processados</div>
+                </article>
+
+                <article class="stat" style="--i:2">
+                    <div class="stat-value">6 meses → 2 dias</div>
+                    <div class="stat-label">Trabalho manual<br />automatizado</div>
+                </article>
+
+                <article class="stat" style="--i:3">
+                    <div class="stat-value">+2 anos</div>
+                    <div class="stat-label">atuando com<br />IA aplicada</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases" id="casos-reais" aria-label="Casos reais de implementação">
+        <div class="cases-inner">
+            <header class="cases-head">
+                <p class="cases-kicker">CASOS</p>
+                <h2 class="cases-title">Casos reais de implementação</h2>
+            </header>
+
+            <div class="cases-list">
+                <!-- Caso 1 -->
+                <article class="case" style="--i:0">
+                    <div class="case-top">
+
+                        <h3 class="case-name">R$ 500.000 recuperados com agente de IA comercial</h3>
+                    </div>
+
+                    <div class="case-body">
+                        <p><strong>Problema:</strong> 40% de leads abandonando compra sem interação.</p>
+                        <p><strong>Solução:</strong> Agente de IA que identifica abandono em tempo real e envia mensagem
+                            personalizada no WhatsApp.</p>
+                        <p><strong>Resultado:</strong> Recuperação de 23% das oportunidades abandonadas = R$ 500.000 em
+                            vendas que seriam perdidas.</p>
+                    </div>
+                </article>
+
+                <!-- Caso 2 -->
+                <article class="case" style="--i:1">
+                    <div class="case-top">
+
+                        <h3 class="case-name">6 meses de trabalho manual comprimidos em 2 dias</h3>
+                    </div>
+
+                    <div class="case-body">
+                        <p><strong>Problema:</strong> +3.000 arquivos precisavam ser analisados, organizados e
+                            documentados.</p>
+                        <p><strong>Solução:</strong> RPA + IA para extração automática de dados, categorização e
+                            organização.</p>
+                        <p><strong>Resultado:</strong> 3.000+ arquivos processados em 2 dias. Zero erro.</p>
+                    </div>
+                </article>
+
+                <!-- Caso 3 -->
+                <article class="case" style="--i:2">
+                    <div class="case-top">
+
+                        <h3 class="case-name">CRM estruturado do zero</h3>
+                    </div>
+
+                    <div class="case-body">
+                        <p><strong>Problema:</strong> Leads dispersos em planilhas, e-mails e WhatsApp. Sem
+                            rastreamento, sem follow-up automático.</p>
+                        <p><strong>Solução:</strong> CRM customizado com integração WhatsApp, e-mail e formulários.
+                            Dashboard de performance em tempo real.</p>
+                        <p><strong>Resultado:</strong> 100% dos leads rastreados, follow-up automático, tempo de
+                            resposta reduzido de 4h para &lt;10 min.</p>
+                    </div>
+                </article>
+
+                <!-- Caso 4 -->
+                <article class="case" style="--i:3">
+                    <div class="case-top">
+
+                        <h3 class="case-name">Diretor comercial (IA) — otimização de performance</h3>
+                    </div>
+
+                    <div class="case-body">
+                        <p><strong>Problema:</strong> Time de vendas sem visibilidade sobre onde perdia oportunidades.
+                        </p>
+                        <p><strong>Solução:</strong> Agente de IA que analisa conversas, identifica gargalos e gera
+                            recomendações específicas para cada vendedor.</p>
+                        <p><strong>Resultado:</strong> Melhoria de 18% na conversão em 30 dias.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="sobre" aria-label="Sobre a ZerowAIt">
+        <div class="about-inner">
+            <header class="about-head">
+                <p class="about-kicker">SOBRE</p>
+                <h2 class="about-title">Sobre a ZerowAIt</h2>
+            </header>
+
+            <div class="about-card">
+                <p class="about-lead">
+                    A ZerowAIt nasce para resolver um problema simples e crítico:
+                    <span class="about-strong">empresas perdem dinheiro porque não conseguem responder rápido.</span>
+                </p>
+
+                <p class="about-text">
+                    Somos uma empresa especializada em <span class="about-strong">IA aplicada a operações reais</span>,
+                    focada em atendimento, vendas, automação e performance comercial.
+                    Nada de IA genérica, robô engessado ou promessa vazia — aqui, cada solução é construída com base no
+                    processo real do cliente.
+                </p>
+
+                <div class="about-divider" aria-hidden="true"></div>
+
+                <p class="about-goal">
+                    Nosso objetivo é um só:<br />
+                    <span class="about-strong">zerar o tempo de espera e maximizar resultados.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="features-wrapper" id="solucoes">
+        <div class="features-inner">
+            <header class="features-head">
+                <p class="features-kicker">SOLUÇÕES</p>
+                <h2 class="features-title">O que a zero wIAt resolve</h2>
+            </header>
+
+            <div class="stack-container">
+                <article class="stack-card card-step-1">
+                    <div class="stack-header">
+                        <h3 class="stack-title">Velocidade</h3>
+                    </div>
+                    <p class="stack-text">Resposta em <span class="text-bright">&lt;1 min</span>, 24h/dia, 7 dias/semana
+                    </p>
+                    <span class="stack-footer">Disponibilidade</span>
+                </article>
+
+                <article class="stack-card card-step-2">
+                    <div class="stack-header">
+
+                        <h3 class="stack-title">Conversão</h3>
+                    </div>
+                    <p class="stack-text">Follow-up automático — <span class="text-bright">zero oportunidade
+                            perdida.</span></p>
+                    <span class="stack-footer">Performance</span>
+                </article>
+
+                <article class="stack-card card-step-3">
+                    <div class="stack-header">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="white">
+                            <path
+                                d="M9,2L7.17,5.5L3.69,7.17L7.17,8.83L9,12.31L10.83,8.83L14.31,7.17L10.83,5.5L9,2M17,9L15.17,12.5L11.69,14.17L15.17,15.83L17,19.31L18.83,15.83L22.31,14.17L18.83,12.5L17,9Z" />
+                        </svg>
+                        </span>
+                        <h3 class="stack-title">Eficiência</h3>
+                    </div>
+                    <p class="stack-text">Time só fala com <span class="text-bright">lead qualificado</span> e pronto
+                        para fechar.</p>
+                    <span class="stack-footer">Hoje</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <script src="./bg.js"></script>
+
+    <script>
+        (() => {
+            const onReady = (fn) => {
+                if (document.readyState === "loading") {
+                    document.addEventListener("DOMContentLoaded", fn, { once: true });
+                } else {
+                    fn();
+                }
+            };
+
+            onReady(() => {
+                revealOnce(".about-head, .about-card", { threshold: 0.2 });
+
+                // =========================
+                // 1) Header: estado ao rolar
+                // =========================
+                const header = document.querySelector(".header");
+                if (header) {
+                    const updateHeader = () => {
+                        const y = window.scrollY || document.documentElement.scrollTop || 0;
+                        header.classList.toggle("is-scrolled", y > 8);
+                    };
+
+                    window.addEventListener("scroll", updateHeader, { passive: true });
+                    window.addEventListener("resize", updateHeader);
+                    updateHeader();
+                }
+                // =========================================
+                // CURSOR RING: círculo que persegue o cursor com delay
+                // =========================================
+                const finePointer = window.matchMedia?.("(pointer: fine)")?.matches;
+
+                if (finePointer) {
+                    const ring = document.createElement("div");
+                    ring.className = "cursor-ring";
+                    ring.setAttribute("aria-hidden", "true");
+                    document.body.appendChild(ring);
+
+                    let x = window.innerWidth / 2;
+                    let y = window.innerHeight / 2;
+                    let tx = x, ty = y;
+
+                    let shown = false;
+                    const lerp = (a, b, t) => a + (b - a) * t;
+
+                    // quanto menor, mais “atraso”; quanto maior, mais grudado
+                    const FOLLOW = 0.14;
+
+                    const loop = () => {
+                        x = lerp(x, tx, FOLLOW);
+                        y = lerp(y, ty, FOLLOW);
+
+                        ring.style.left = x + "px";
+                        ring.style.top = y + "px";
+
+                        requestAnimationFrame(loop);
+                    };
+                    requestAnimationFrame(loop);
+
+                    window.addEventListener("pointermove", (e) => {
+                        tx = e.clientX;
+                        ty = e.clientY;
+
+                        if (!shown) {
+                            shown = true;
+                            ring.style.opacity = "1";
+                        }
+                    }, { passive: true });
+
+                    window.addEventListener("pointerdown", () => ring.classList.add("is-down"), { passive: true });
+                    window.addEventListener("pointerup", () => ring.classList.remove("is-down"), { passive: true });
+
+                    window.addEventListener("blur", () => { ring.style.opacity = "0"; shown = false; });
+                    document.addEventListener("mouseleave", () => { ring.style.opacity = "0"; shown = false; });
+                }
+
+                // ==========================================
+                // 2) Reveal genérico: adiciona .is-visible 1x
+                // ==========================================
+                const revealOnce = (selector, options) => {
+                    const els = document.querySelectorAll(selector);
+                    if (!els.length) return;
+
+                    const obs = new IntersectionObserver((entries, observer) => {
+                        for (const entry of entries) {
+                            if (!entry.isIntersecting) continue;
+                            entry.target.classList.add("is-visible");
+                            observer.unobserve(entry.target);
+                        }
+                    }, options);
+
+                    els.forEach((el) => obs.observe(el));
+                };
+
+                // Resultados (mesmo comportamento)
+                revealOnce(".results-head, .stat", { threshold: 0.2 });
+
+                // ===================================
+                // 3) Features head: animação de entrada
+                // ===================================
+                const featuresHead = document.querySelector(".features-head");
+                if (featuresHead) {
+                    featuresHead.style.opacity = "0";
+                    featuresHead.style.transform = "translateY(20px)";
+                    featuresHead.style.transition = "all 0.8s ease-out";
+
+                    const obs = new IntersectionObserver((entries, observer) => {
+                        for (const entry of entries) {
+                            if (!entry.isIntersecting) continue;
+                            entry.target.style.opacity = "1";
+                            entry.target.style.transform = "translateY(0)";
+                            observer.unobserve(entry.target);
+                        }
+                    }, { threshold: 0.1 });
+
+                    obs.observe(featuresHead);
+                }
+
+                // ==========================================================
+                // 4) Hover blur em feature-card (só se existir no DOM)
+                // ==========================================================
+                const featureCards = document.querySelectorAll(".feature-card");
+                if (featureCards.length) {
+                    featureCards.forEach((card) => {
+                        card.addEventListener("mouseenter", () => {
+                            card.style.backdropFilter = "blur(20px)";
+                        });
+                        card.addEventListener("mouseleave", () => {
+                            card.style.backdropFilter = "blur(10px)";
+                        });
+                    });
+                }
+
+                // =========================================
+                // 5) Dark mode: unificado (sem duplicação)
+                // =========================================
+                const casesSection =
+                    document.querySelector("#casos-reais") || document.querySelector(".cases");
+
+                if (casesSection) {
+                    const darkObs = new IntersectionObserver((entries) => {
+                        const entry = entries[0];
+                        // ativa de forma estável e também garante remoção ao sair (threshold inclui 0)
+                        const active = entry.intersectionRatio >= 0.15;
+                        document.body.classList.toggle("dark-mode-active", active);
+                    }, { threshold: [0, 0.15] });
+
+                    darkObs.observe(casesSection);
+                }
+                // =========================================
+                // 7) SOLUÇÕES: fundo preto + luz canto direito
+                // =========================================
+                const solutionsSection = document.querySelector("#solucoes");
+                if (solutionsSection) {
+                    const solObs = new IntersectionObserver(
+                        (entries) => {
+                            const entry = entries[0];
+                            const active = entry.intersectionRatio >= 0.2; // 20% visível
+                            document.body.classList.toggle("solutions-active", active);
+                        },
+                        { threshold: [0, 0.2] }
+                    );
+
+                    solObs.observe(solutionsSection);
+                }
+
+                // ==================================================
+                // 6) Casos: trava scroll + revela cases em sequência
+                // ==================================================
+                const casesWrapper = document.querySelector(".cases");
+                const cases = Array.from(document.querySelectorAll(".case"));
+
+                if (casesWrapper && cases.length) {
+                    let index = 0;
+                    let delayBetweenCases = 700;
+                    let locked = false;
+                    let started = false;
+
+                    const lockScroll = () => {
+                        document.body.style.overflow = "hidden";
+                        locked = true;
+                    };
+
+                    const unlockScroll = () => {
+                        document.body.style.overflow = "";
+                        locked = false;
+                    };
+
+                    const showNextCase = () => {
+                        if (index >= cases.length) {
+                            unlockScroll();
+                            return;
+                        }
+                        cases[index].classList.add("is-visible");
+                        index += 1;
+                        window.setTimeout(showNextCase, delayBetweenCases);
+                    };
+
+                    window.addEventListener(
+                        "wheel",
+                        (e) => {
+                            if (!locked) return;
+                            delayBetweenCases = Math.max(
+                                150,
+                                delayBetweenCases - Math.abs(e.deltaY) * 0.3
+                            );
+                        },
+                        { passive: true }
+                    );
+
+                    const startObs = new IntersectionObserver(
+                        (entries, observer) => {
+                            const entry = entries[0];
+                            if (!entry.isIntersecting || started) return;
+
+                            started = true;
+                            observer.disconnect();
+                            lockScroll();
+                            showNextCase();
+                        },
+                        { threshold: 0.6 }
+                    );
+
+                    startObs.observe(casesWrapper);
+                }
+            });
+        })();
+    </script>
+    .about-head,
+    .about-card {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(6px);
+    transition:
+    opacity .9s ease,
+    transform .9s cubic-bezier(.2,.8,.2,1),
+    filter .9s ease;
+    }
+
+    .about-head.is-visible,
+    .about-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    }
+
+</body>
+
+</html>
